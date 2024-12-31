@@ -9,7 +9,7 @@ window.onload = () => {
 
   // List of song sources
   const songs = [
-    'songs/ankhon mai.mp4',  
+    'songs/ankhon mai.mp4',
     'songs/sorry.mp4',
     'songs/tokyodrift.mp3'
 

@@ -11,8 +11,8 @@ window.onload = () => {
   const songs = [
     'songs/ankhon mai.mp4',
     'songs/sorry.mp4',
-    'songs/tokyodrift.mp3'
-
+    'songs/best day of my life.mp4'
+ 
   ];
 
   // Get the visit count from localStorage (default to 0 if not found)

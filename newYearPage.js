@@ -10,8 +10,9 @@ window.onload = () => {
   // List of song sources
   const songs = [
     'songs/ankhon mai.mp4',
-    'songs/sorry.mp4',
-    'songs/best day of my life.mp4'
+    'songs/bdi baat.mp4',
+    'songs/best day of my life.mp4',
+    'songs/bagad.mp4'
  
   ];
 

@@ -12,7 +12,8 @@ window.onload = () => {
     'songs/ankhon mai.mp4',
     'songs/bdi baat.mp4',
     'songs/best day of my life.mp4',
-    'songs/bagad.mp4'
+    'songs/bagad.mp4',
+    'songs/diljit.mp4',
  
   ];
 

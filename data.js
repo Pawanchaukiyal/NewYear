@@ -1,6 +1,6 @@
 export const userData = [
-  { name: "Shubham", phoneNumber: "9837408959", message: "Wishing you a fantastic New Year!" },
-  { name: "Deepyanti", phoneNumber: "9821884795", message: "Cheers to 2025 and beyond Aur bdi ho ja!" },
+  { name: "Shubham", phoneNumber: "9837408959", message: "Wishing you a fantastic New Year! Mast rhe" },
+  { name: "Deepyanti", phoneNumber: "9821884795", message: "Cheers to 2025 and beyond Aur bdi ho ja! 😇" },
   { name: "Mohit", phoneNumber: "9319285125", message: "May this year bring you happiness!" },
   { name: "Ankita", phoneNumber: "7496854804", message: "Have a joyful and prosperous New Year!" },
   { name: "Chandan", phoneNumber: "9661635126", message: "Wishing you peace and success in 2025!" },

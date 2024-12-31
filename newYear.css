@@ -1,0 +1,190 @@
+/* Full-screen video styling */
+#backgroundVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Body and container styles */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b1522;
+  overflow: hidden;
+}
+
+/* Container with glow effect */
+.container {
+  max-width: 400px;
+  width: 100%;  /* Ensure it takes up full width on small screens */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: rgb(73 158 171 / 12%);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  /* Initial box-shadow for the glow effect */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 25px rgba(0, 204, 255, 0.8);
+  animation: moveGlow 5s linear infinite; /* Apply animation for the moving glow */
+}
+
+/* Moving glow effect animation */
+@keyframes moveGlow {
+  0% {
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 25px rgba(0, 204, 255, 0.8);
+  }
+  25% {
+      box-shadow: 20px 0 25px rgba(255, 255, 255, 0.6), 20px 0 35px rgba(0, 204, 255, 0.8);
+  }
+  50% {
+      box-shadow: 0 20px 25px rgba(255, 255, 255, 0.6), 0 20px 35px rgba(0, 204, 255, 0.8);
+  }
+  75% {
+      box-shadow: -20px 0 25px rgba(255, 255, 255, 0.6), -20px 0 35px rgba(0, 204, 255, 0.8);
+  }
+  100% {
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 25px rgba(0, 204, 255, 0.8);
+  }
+}
+
+/* Heading styles */
+h1 {
+  font-size: 2rem;
+  color: #9644ff;
+}
+
+/* Paragraph styles */
+p {
+  font-size: 1.2rem;
+  color: #38ff00;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4caf5099;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Make the button full-width */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Back button styling */
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Full width on smaller screens */
+}
+
+.back-button:hover {
+  background-color: #45a049;
+}
+
+/* Styling for the span at the bottom */
+span {
+  position: fixed;
+  bottom: 10px; /* Adjust this to place the span content vertically */
+  right: 10px;  /* Align it to the right */
+  font-size: 1.8rem;
+  color: rgb(68 244 24); /* Set color for better visibility */
+  z-index: 10; /* Ensure the span stays above other elements */
+}
+
+/* Media queries for responsiveness */
+
+/* For mobile screens (up to 480px) */
+@media (max-width: 480px) {
+  .container {
+      max-width: 90%; /* Make the container wider on small screens */
+      padding: 15px;  /* Reduce padding on small screens */
+  }
+
+  h1 {
+      font-size: 1.5rem; /* Reduce heading size on mobile */
+  }
+
+  p {
+      font-size: 1rem; /* Smaller paragraph text */
+  }
+
+  button {
+      padding: 12px 25px;  /* Slightly bigger button for better tapability */
+      font-size: 1.1rem; /* Larger button text */
+  }
+
+  .back-button {
+      padding: 12px 25px;
+      font-size: 1.1rem;
+  }
+
+  span {
+      font-size: 1.4rem; /* Adjust the span font size */
+  }
+}
+
+/* For tablets (up to 768px) */
+@media (max-width: 768px) {
+  .container {
+      max-width: 80%; /* Reduce container width slightly on tablets */
+  }
+
+  h1 {
+      font-size: 1.8rem; /* Medium-sized heading */
+  }
+
+  p {
+      font-size: 1.1rem; /* Slightly smaller paragraph text */
+  }
+
+  button {
+      padding: 12px 25px;  /* Button scaling for tablets */
+  }
+
+  span {
+      font-size: 1.6rem; /* Larger font size for tablet screens */
+  }
+}
+
+/* For larger screens (desktops) */
+@media (min-width: 1024px) {
+  .container {
+      max-width: 400px; /* Keep container width fixed for large screens */
+  }
+
+  h1 {
+      font-size: 2rem; /* Standard heading font size */
+  }
+
+  p {
+      font-size: 1.2rem; /* Standard paragraph size */
+  }
+
+  button {
+      font-size: 1rem; /* Standard button font size */
+  }
+
+  span {
+      font-size: 1.8rem; /* Standard font size for span */
+  }
+}

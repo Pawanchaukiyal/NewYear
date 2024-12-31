@@ -1,0 +1,203 @@
+/* Full-screen video styling */
+#backgroundVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the screen */
+  z-index: -1; /* Puts the video behind all other content */
+}
+
+/* Global body styles */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b1522; /* Fallback background color */
+  overflow: hidden; /* Prevents scrolling */
+}
+
+/* Container styles */
+.container {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: rgb(73 158 171 / 40%);
+  text-align: center;
+  width: 100%; /* Make container take full width */
+  max-width: 400px; /* Set max width to 400px for larger screens */
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+}
+
+/* Heading */
+h1 {
+  font-size: 2rem;
+  color: #0a062b;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="tel"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Make inputs take full width of the container */
+}
+
+/* Button styling */
+button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #4caf5099;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Make button full width on small screens */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Hidden elements */
+.hidden {
+  display: none;
+}
+
+/* Loader styling */
+#loader {
+  font-size: 1.2rem;
+  color: #4c89af;
+  margin-top: 20px;
+}
+
+/* Error message styling */
+#errorMessage {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  background-color: #ffe6e6;
+}
+
+/* Back button styling */
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #45a049;
+}
+
+/* Styling for the span at the bottom */
+span {
+  position: fixed;
+  bottom: 10px; /* Adjust this to place the span content vertically */
+  right: 10px;  /* Align it to the right */
+  font-size: 1.5rem; /* Optional: Adjust the font size */
+  color: rgb(27, 47, 35);  /* Set color for better visibility */
+  z-index: 10; /* Ensure the span stays above other elements */
+}
+
+/* Media queries for responsiveness */
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+    max-width: 100%; /* Full width for mobile screens */
+    margin: 0 10px; /* Add some margin to avoid touching edges */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Reduce heading size for small screens */
+  }
+
+  input[type="text"],
+  input[type="tel"] {
+    font-size: 0.9rem; /* Smaller input font size */
+    padding: 8px; /* Smaller padding for inputs */
+  }
+
+  button {
+    font-size: 0.9rem; /* Smaller button font */
+    padding: 8px; /* Smaller padding for button */
+  }
+
+  span {
+    font-size: 1rem; /* Adjust the span font size for smaller screens */
+  }
+}
+
+/* For tablets (portrait) */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    max-width: 90%; /* Make the container width smaller for tablets */
+    margin: 0 10px; /* Add some margin to avoid touching edges */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Slightly smaller heading */
+  }
+
+  input[type="text"],
+  input[type="tel"] {
+    font-size: 1rem; /* Standard input font size */
+  }
+
+  button {
+    font-size: 1rem; /* Standard button font size */
+  }
+
+  span {
+    font-size: 1.2rem; /* Slightly larger span font size */
+  }
+}
+
+/* For larger screens (desktops) */
+@media (min-width: 1024px) {
+  .container {
+    padding: 30px;
+    max-width: 490px; /* Standard max-width for larger screens */
+  }
+
+  h1 {
+    font-size: 2rem; /* Standard heading font size */
+  }
+
+  input[type="text"],
+  input[type="tel"] {
+    font-size: 1.1rem; /* Larger input font size */
+  }
+
+  button {
+    font-size: 1.1rem; /* Larger button font size */
+  }
+
+  span {
+    font-size: 1.5rem; /* Keep the span font size as is for larger screens */
+  }
+}
